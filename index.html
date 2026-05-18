@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency Converter</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="background"></div>
+
+  <div class="container">
+    <div class="card">
+
+      <h1>Currency Converter</h1>
+      <p class="subtitle">Convert currencies instantly</p>
+
+      <input type="number" id="amount" placeholder="Enter amount">
+
+      <div class="selects">
+
+        <div class="box">
+          <label>From</label>
+
+          <select id="from">
+
+            <option value="USD">🇺🇸 USD - Dollar</option>
+            <option value="EUR">🇪🇺 EUR - Euro</option>
+            <option value="AZN">🇦🇿 AZN - Manat</option>
+            <option value="RUB">🇷🇺 RUB - Ruble</option>
+            <option value="GBP">🇬🇧 GBP - Pound</option>
+            <option value="TRY">🇹🇷 TRY - Lira</option>
+            <option value="JPY">🇯🇵 JPY - Yen</option>
+            <option value="CAD">🇨🇦 CAD - Canadian Dollar</option>
+            <option value="AUD">🇦🇺 AUD - Australian Dollar</option>
+            <option value="CHF">🇨🇭 CHF - Franc</option>
+            <option value="CNY">🇨🇳 CNY - Yuan</option>
+            <option value="KRW">🇰🇷 KRW - Won</option>
+            <option value="AED">🇦🇪 AED - Dirham</option>
+
+          </select>
+        </div>
+
+        <div class="box">
+          <label>To</label>
+
+          <select id="to">
+
+            <option value="AZN">🇦🇿 AZN - Manat</option>
+            <option value="USD">🇺🇸 USD - Dollar</option>
+            <option value="EUR">🇪🇺 EUR - Euro</option>
+            <option value="RUB">🇷🇺 RUB - Ruble</option>
+            <option value="GBP">🇬🇧 GBP - Pound</option>
+            <option value="TRY">🇹🇷 TRY - Lira</option>
+            <option value="JPY">🇯🇵 JPY - Yen</option>
+            <option value="CAD">🇨🇦 CAD - Canadian Dollar</option>
+            <option value="AUD">🇦🇺 AUD - Australian Dollar</option>
+            <option value="CHF">🇨🇭 CHF - Franc</option>
+            <option value="CNY">🇨🇳 CNY - Yuan</option>
+            <option value="KRW">🇰🇷 KRW - Won</option>
+            <option value="AED">🇦🇪 AED - Dirham</option>
+
+          </select>
+        </div>
+
+      </div>
+
+      <button onclick="convertCurrency()">
+        Convert
+      </button>
+
+      <div class="result" id="result">
+        0.00
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
